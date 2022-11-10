@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swap.css">
     <title>Swap</title>
 </head>
 
 <body>
-    <div style="display: flex; gap: 10px;">
+    <main>
         <div><img id="tom" src="https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg" alt=""
                 width=200px></div>
         <div><img id="jerry" src="https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg" alt=""
                 width=200px></div>
+    </main>
+    <div class="btn">
+        <button onclick="swap()">Swap</button>
     </div>
-    <button onclick="swap()">Swap</button>
 </body>
 <script>
     function swap() {

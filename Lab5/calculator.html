@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="claculator.css">
     <title>Calculator</title>
 </head>
 
@@ -16,19 +17,29 @@
         <input id="num2" type="number" placeholder="Enter number">
     </div>
     <br>
-    <div><input id="result" type="number" placeholder="Result" readonly> </div>
+    <div class="results"><input id="result" type="number" placeholder="Result" readonly> </div>
 
-    <br><button onclick="add()">submit</button>
+    <br>
+    <div class="btn">
+        <button onclick="add()">Submit</button>
+        <button onclick="clearResult()">Clear</button>
+    </div>
+
 </body>
 <script>
     let number1 = document.getElementById("num1");
     let number2 = document.getElementById("num2");
     let result = document.getElementById("result");
 
-    function add(){
-        result.value = Number(number1.value) + Number(number2.value);
-        number1.value="";
-        number2.value="";
+    function add() {
+        if (number1.value != "" && number2.value != "") {
+            result.value = Number(number1.value) + Number(number2.value);
+            number1.value = "";
+            number2.value = "";
+        }
+    }
+    function clearResult() {
+        result.value = "";
     }
 </script>
 
