@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator2.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+
+    <div class="inputs">
+        <input id="num1" type="number" placeholder="Enter number">
+        <input id="opr" type="text" placeholder="+ - / x">
+        <input id="num2" type="number" placeholder="Enter number">
+    </div>
+    <br>
+    <div class="results"><input id="result" type="number" placeholder="Result" readonly> </div>
+
+    <br>
+    <div class="btn">
+        <button id="calculate">Submit</button>
+        <button onclick="clearResult()">Clear</button>
+    </div>
+
+</body>
+<script>
+    let number1 = document.getElementById("num1");
+    let number2 = document.getElementById("num2");
+    let operation = document.getElementById("opr");
+    let result = document.getElementById("result");
+
+    let calculate = document.getElementById("calculate");
+
+    document.addEventListener("mousedown", operate)
+    function operate() {
+        result.value = Number(number1.value) + Number(number2.value);
+        number1.value = "";
+        number2.value = "";
+        operation.value == "";
+    }
+    function clearResult() {
+        result.value = "";
+    }
+</script>
+
+</html>

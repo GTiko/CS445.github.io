@@ -17,12 +17,13 @@
                 width=200px></div>
     </main>
     <div class="btn">
-        <button onclick="swap()">Swap</button>
+        <button id="swap">Swap</button>
     </div>
 </body>
 <script>
-    function swap() {
 
+    let swap = document.getElementById("swap");
+    swap.onclick = function () {
         if (document.getElementById("tom").src == 'https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg' &&
             document.getElementById("jerry").src == 'https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg') {
             document.getElementById("tom").src = "https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg";

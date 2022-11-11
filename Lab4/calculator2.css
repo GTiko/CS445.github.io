@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(45deg,#dadbd2,#3643f3);
+}
+h1{
+    font-size: 100px;
+}
+h1,.inputs,.results,.btn{
+    text-align: center;
+}
+#num1,#num2,#result,#opr,button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+#opr{
+    width: 100px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
