@@ -11,9 +11,9 @@
 
 <body>
     <main>
-        <div><img id="tom" src="https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg" alt=""
+        <div><img id="tom" src="https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg" alt="tom"
                 width=200px></div>
-        <div><img id="jerry" src="https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg" alt=""
+        <div><img id="jerry" src="https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg" alt="jerry"
                 width=200px></div>
     </main>
     <div class="btn">
@@ -21,16 +21,18 @@
     </div>
 </body>
 <script>
+    let img1 = document.getElementById('tom').src;
+    let img2 = document.getElementById('jerry').src;
 
     let swap = document.getElementById("swap");
     swap.onclick = function () {
-        if (document.getElementById("tom").src == 'https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg' &&
-            document.getElementById("jerry").src == 'https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg') {
-            document.getElementById("tom").src = "https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg";
-            document.getElementById("jerry").src = "https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg";
+        if (document.getElementById("tom").src == img1 &&
+            document.getElementById("jerry").src == img2) {
+            document.getElementById("tom").src = img2;
+            document.getElementById("jerry").src = img1;
         } else {
-            document.getElementById("tom").src = "https://i.pinimg.com/originals/07/12/41/071241378aaaffe6fc66d60613eeabe2.jpg";
-            document.getElementById("jerry").src = "https://i.pinimg.com/736x/0d/33/db/0d33db1f7c3846f231a99a7fec18dcca.jpg";
+            document.getElementById("tom").src = img1;
+            document.getElementById("jerry").src = img2;
         }
     }
 </script>

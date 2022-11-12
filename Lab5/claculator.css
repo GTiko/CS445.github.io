@@ -8,11 +8,14 @@ h1{
 h1,.inputs,.results,.btn{
     text-align: center;
 }
-#num1,#num2,#result,button{
+#num1,#num2,#result,#opr,button{
     padding: 10px;
     border-radius: 10px;
     font-size: x-large;
     text-align: center;
+}
+#opr{
+    width: 100px;
 }
 .btn{
     display: flex;
