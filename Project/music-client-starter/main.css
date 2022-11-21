@@ -1,0 +1,81 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(45deg, #dadbd2, #e5fe77);
+  background-image: url(./pic2.webp);
+}
+
+table,
+th,
+tr,
+td {
+  border: solid 1px;
+}
+table {
+  width: 100%;
+}
+
+#play {
+  width: 100%;
+}
+#repeat,
+#shuffle,
+#next,
+#priv {
+  border-radius: 50%;
+}
+#logoutBtn {
+  float: right;
+}
+#findMusic {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#players {
+  display: flex;
+  justify-content: center;
+}
+
+#errorMsg {
+  color: red;
+}
+
+#priv:hover,
+#shuffle:hover,
+#repeat:hover,
+#next:hover,
+.addBtn:hover,
+tr:hover {
+  background-color: #66c9f7;
+}
+
+.addBtn {
+  width: 100%;
+}
+#username,
+#password,
+#loginBtn {
+  color: brown;
+  font-weight: bold;
+  margin-top: 25px;
+  background-color: antiquewhite;
+}
+#bdy {
+  margin-top: 25px;
+  background-image: url(./pic2.webp);
+}
+#displayPlay {
+  margin-top: 25px;
+  background-image: url(./pic1.webp);
+}
+#play {
+  background-image: transparent;
+  opacity: 0.6;
+}
+
+#searchBtn, #logoutBtn{
+background-color: antiquewhite;
+color: brown;
+  
+}
